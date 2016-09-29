@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BtnLabel" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cw0-A2-fQF" customClass="CustomNotClipTitleButton" customModule="BtnLabel" customModuleProvider="target">
+                                <rect key="frame" x="235" y="240" width="130" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="cw0-A2-fQF" secondAttribute="height" multiplier="134:130" id="H9X-Zm-GbZ"/>
+                                    <constraint firstAttribute="height" constant="120" id="dow-IJ-Eqz"/>
+                                    <constraint firstAttribute="width" secondItem="cw0-A2-fQF" secondAttribute="height" multiplier="13:12" id="pNo-7L-KHy"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="-95" minY="96" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="15" minY="-30" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Title" image="未登录头像">
+                                    <color key="titleColor" red="0.5568627451" green="0.77647058820000003" blue="0.2470588235" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="titleLabel.textAlignment">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="H9X-Zm-GbZ"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="touchBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IL8-DP-aTG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cw0-A2-fQF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="5mP-7n-558"/>
+                            <constraint firstItem="cw0-A2-fQF" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="omZ-gL-R6h"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="titleBtn" destination="cw0-A2-fQF" id="AzG-PQ-k88"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="369" y="219"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="未登录头像" width="94" height="94"/>
+    </resources>
+</document>
